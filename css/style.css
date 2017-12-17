@@ -176,6 +176,21 @@ ul {
     border-color     : #fd367e;
     }
 
+/*btn-outline-dark*/
+.btn-outline-dark {
+    color            : black;
+    background-color : transparent;
+    border-color     : black;
+    }
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus,
+.btn-outline-dark:active:focus {
+    background-color : transparent;
+    color            : #fd367e;
+    border-color     : #fd367e;
+    }
+
 button:focus,
 .btn:focus,
 .btn:active:focus {
@@ -363,7 +378,7 @@ button:focus,
 .jumbotron .content {
     color             : #ffffff;
     position          : absolute;
-    top               : 50%;
+    top               : 40%;
     left              : 0;
     right             : 0;
     height            : 30%;
@@ -388,7 +403,7 @@ button:focus,
 
 .jumbotron .content .event-date {
     font-size     : 24px;
-    margin-bottom : 40px;
+    margin-bottom : 20px;
     }
 
 .jumbotron .btn {
@@ -481,8 +496,8 @@ button:focus,
     font-size        : 16px;
     font-weight: bold;
 
-    margin           : 0 40px;
-    text-transform   : uppercase;
+    margin           : 0 5px;
+    /*text-transform   : uppercase;*/
     padding          : 10px 0;
     }
 
@@ -538,7 +553,7 @@ button:focus,
 .section-ajenda .session h3 {
     margin         : 20px 0 20px 20px;
     font-size      : 20px;
-    text-transform : uppercase;
+    /*text-transform : uppercase;*/
     }
 
 .section-ajenda .session h3 span {
@@ -753,3 +768,22 @@ button:focus,
     text-align : center;
     top        : 65%;
     }
+
+
+/* custome styles for IRCSCSE */
+.navbarLogoRow {
+    margin-bottom: 0px;
+}
+
+.ircscseTextJustify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.importantDateColItem {
+    margin-top: 10px;
+}
+
+.ircscseDownloadBtnBlack {
+    color: black;
+}
