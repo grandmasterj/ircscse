@@ -485,7 +485,7 @@ button:focus,
     }
 
 .team .thumbnail img {
-    width : 100%;
+    width : 50%;
     }
 
 .team .thumbnail .caption {
@@ -773,6 +773,7 @@ button:focus,
 /* custome styles for IRCSCSE */
 .navbarLogoRow {
     margin-bottom: 0px;
+    text-transform: none;
 }
 
 .ircscseTextJustify {
