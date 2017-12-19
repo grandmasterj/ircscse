@@ -90,7 +90,7 @@ jQuery(function ($) {
                 streetViewControl : false,
                 mapTypeId         : google.maps.MapTypeId.ROADMAP,
                 scrollwheel       : true,
-                styles            : style,
+                // styles            : style,
             }
             //initialize the map
             var map = new google.maps.Map(document.getElementById('googleMap'), map_options);
