@@ -551,7 +551,8 @@ button:focus,
     margin : 20px 0 0 20px;
     }
 
-.section-ajenda .session h3 {
+.section-ajenda .session h3,
+.section-ajenda .session h4 {
     margin         : 20px 0 20px 20px;
     font-size      : 20px;
     /*text-transform : uppercase;*/
@@ -794,4 +795,11 @@ button:focus,
     width: 50%;
     padding-top: 5px;
     padding-left: 25px;
+}
+
+
+.scse-wide-button {
+    width: 100%;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
