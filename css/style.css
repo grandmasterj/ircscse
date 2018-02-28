@@ -803,3 +803,9 @@ button:focus,
     margin-top: 10px !important;
     margin-bottom: 10px !important;
 }
+
+.earlybirdBanner {
+    color: #fd367e;
+    margin-bottom: -40px;
+    font-size: 110%;
+}
