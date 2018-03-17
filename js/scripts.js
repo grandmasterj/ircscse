@@ -105,3 +105,8 @@ jQuery(function ($) {
     }());
 
 }); // JQuery end
+
+
+// $('.navbar-collapse a').click(function(){
+//     $(".navbar-collapse").collapse('hide');
+// });

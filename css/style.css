@@ -36,6 +36,47 @@ Author: uiCookies.com
 # Mid grey (sub header) #666666
 # -------------------------------------------------------------------*/
 
+/*keep navbar collapsed*/
+@media (max-width: 2000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+        /*margin-top : 10px;*/
+        background: #fff;
+        color: black;
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
 body {
     font-family : 'Roboto', sans-serif;
     font-size   : 17px;
@@ -288,10 +329,18 @@ button:focus,
     }
 
 .main-menu .nav li a {
-    color       : #ffffff;
+    /*color       : #ffffff;*/
+    color: black;
     font-weight : 500;
     padding     : 15px 0 15px 30px;
+    text-align: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     }
+.main-menu .nav li a:hover {
+    border-top: 2px solid #fd367e;
+    border-bottom: 2px solid #fd367e;
+}
 
 .main-menu .nav li a:hover,
 .main-menu .nav li.active a {
