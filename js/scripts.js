@@ -56,6 +56,53 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
 
     (function () {
+        if ($('#googleMapHotel').length > 0) {
+
+            //set your google maps parameters
+            var $latitude  = 6.9833541, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
+                $longitude = 79.9324691,
+                $map_zoom  = 17;
+            /* ZOOM SETTING */
+
+            //google map custom marker icon
+            var $marker_url = 'img/google-map-marker.png';
+
+            //we define here the style of the map
+            var style = [{
+                "stylers" : [{
+                    "hue" : "#000"
+                }, {
+                    "saturation" : 100
+                }, {
+                    "gamma" : 1.15
+                }, {
+                    "lightness" : 5
+                }]
+            }];
+
+            //set google map options
+            var map_options = {
+                center            : new google.maps.LatLng($latitude, $longitude),
+                zoom              : $map_zoom,
+                panControl        : false,
+                zoomControl       : false,
+                mapTypeControl    : false,
+                streetViewControl : false,
+                mapTypeId         : google.maps.MapTypeId.ROADMAP,
+                scrollwheel       : true,
+                // styles            : style,
+            }
+            //initialize the map
+            var map = new google.maps.Map(document.getElementById('googleMapHotel'), map_options);
+            //add a custom marker to the map
+            var marker = new google.maps.Marker({
+                position : new google.maps.LatLng($latitude, $longitude),
+                map      : map,
+                visible  : true,
+                icon     : $marker_url
+            });
+        }
+
         if ($('#googleMap').length > 0) {
 
             //set your google maps parameters
